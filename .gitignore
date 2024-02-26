@@ -1,3 +1,7 @@
+# mise
+.mise.local.toml
+.mise.*.local.toml
+
 # Python
 __pycache__
 .venv/
