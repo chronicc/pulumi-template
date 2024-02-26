@@ -2,6 +2,9 @@
 .mise.local.toml
 .mise.*.local.toml
 
+# Pulumi
+Pulumi.*.yaml
+
 # Python
 __pycache__
 .venv/
