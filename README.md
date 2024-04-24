@@ -8,7 +8,7 @@ Have all resources considered as infrastructure contained in one repository and 
 
 - Install mise: https://mise.jdx.dev/getting-started.html
 - Inside of the repository root run `mise run install` to install the project dependencies.
-- Fill out the missing values inside `.mise.local.toml`. For secret values look into 1password.
+- Fill out the missing values inside `.mise.local.toml`.
 
 ### Introduction to mise-en-place
 
