@@ -15,7 +15,7 @@ by one tool.
 
 > Project Site: https://github.com/jdx/mise
 
-Mise-en-place (frech for setup) takes care of managing the project dependencies, allows
+Mise-en-place (french for setup) takes care of managing the project dependencies, allows
 running tasks like `make` and automatically sets up the python virtual environment.
 To see all available commands run `mise tasks`.
 
@@ -39,3 +39,7 @@ If you find yourself in a place where the project seems to behave strange or you
 dependencies are broken, you can reset the project environment by running `mise run clean`.
 This will remove the virtual environment but not the `.mise.local.toml`. Afterwards you
 can run `mise run install` to reinstall the project dependencies.
+
+## Topics
+
+- [Conventional Commit Messages](docs/conventional_commit_messages.md)
