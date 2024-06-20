@@ -3,8 +3,8 @@
 '_'.python.venv.path = ".venv"
 
 [tools]
-pulumi = "3.113.3"
-python = "3.12"
+pulumi = "3"
+python = "3"
 
 [settings]
 experimental = true
