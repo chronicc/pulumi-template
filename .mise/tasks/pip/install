@@ -1,12 +1,20 @@
 #!/usr/bin/env bash
 # mise description="Install python requirements"
 
-if [ -f requirements-dev.lock ]
+get_dependencies() {
+    pip freeze | grep -ve '-e'
+}
+
+if [ -f requirements.lock ]
 then
-    pip install --requirement=requirements-dev.lock
-elif [ -f requirements.lock ]
-then
-    pip install --requirement=requirements.lock
+    pip install --requirement=requirements.txt --requirement=requirements.lock
+    get_dependencies > requirements.lock
 else
     echo "No requirements file found. Please run 'mise run pip:upgrade' to generate one."
+fi
+
+if [ -f requirements-dev.lock ]
+then
+    pip install --requirement=requirements-dev.txt --requirement=requirements-dev.lock
+    get_dependencies > requirements-dev.lock
 fi
